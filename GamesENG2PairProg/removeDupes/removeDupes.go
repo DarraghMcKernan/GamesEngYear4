@@ -38,10 +38,6 @@ nums is sorted in non-decreasing order.
 */
 package main
 
-import (
-	"fmt"
-)
-
 // non decreasing, remove in place, return unique quantity
 func removeDupes(numArray []int) (uniqueNums int) {
 	if len(numArray) < 1 || len(numArray) > 30000 { //1 <= nums.length <= 3 * 10^4
@@ -83,8 +79,8 @@ func removeDupes(numArray []int) (uniqueNums int) {
 }
 
 func main() {
-	arrayOfNums := [8]int{1, 1, 1, 1, 1, 1, 1, 1} //array is in order and has duplicates
-	uniques := removeDupes(arrayOfNums[:])        //give back number of unique elements
-	fmt.Print("\nAmount of unique numbers: ")
-	fmt.Print(uniques)
+	//arrayOfNums := [8]int{1, 1, 1, 1, 1, 1, 1, 1} //array is in order and has duplicates
+	//uniques := removeDupes(arrayOfNums[:])        //give back number of unique elements
+	//fmt.Print("\nAmount of unique numbers: ")
+	//fmt.Print(uniques)
 }
